@@ -1,0 +1,42 @@
+[
+    {
+        "model": "Shahed-136/131",
+        "launched": 5145
+    },
+    {
+        "model": "X-101/X-555",
+        "launched": 467
+    },
+    {
+        "model": "C-300",
+        "launched": 154
+    },
+    {
+        "model": "Kalibr",
+        "launched": 118
+    },
+    {
+        "model": "X-59",
+        "launched": 106
+    },
+    {
+        "model": "Iskander-M",
+        "launched": 100
+    },
+    {
+        "model": "X-22",
+        "launched": 78
+    },
+    {
+        "model": "X-59/X-69",
+        "launched": 48
+    },
+    {
+        "model": "C-300/C-400",
+        "launched": 41
+    },
+    {
+        "model": "Iskander-K",
+        "launched": 40
+    }
+]
