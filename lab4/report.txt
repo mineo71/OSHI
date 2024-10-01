@@ -1,0 +1,41 @@
+
+# Report on Machine Learning Models
+
+## 1. Data Generation
+- Lorenz System: Generated using the Lorenz equations with parameters \(\sigma = 10\), \(ho = 28\), \(eta = 8/3\).
+- Narendra-Parthasarathy Objects: Generated using specified coefficients \(lpha_i\), \(eta_i\), \(\gamma_i\), \(\delta_i\).
+
+## 2. Modeling
+- Models Used:
+  - Linear Regression (with Ridge and Lasso regularization)
+  - Decision Tree
+  - Random Forest
+  - Support Vector Machine (SVM)
+
+## 3. Hyperparameter Tuning
+- Grid Search was used to find the optimal hyperparameters for each model:
+  - Linear Regression: Regularization parameter \(lpha\).
+  - Decision Tree: `max_depth`, `min_samples_split`, `min_samples_leaf`.
+  - Random Forest: `n_estimators`, `max_depth`, `min_samples_split`, `min_samples_leaf`.
+  - SVM: `C`, `kernel`, `gamma`.
+
+## 4. Model Evaluation
+- Metrics Used:
+  - Mean Squared Error (MSE)
+  - R² Score
+
+## 5. Results
+- Metrics Table:
+           Model  Validation MSE  Validation R²  Test MSE   Test R²
+Ridge Regression        0.084072      -0.003790  0.086516 -0.006691
+Lasso Regression        0.083770      -0.000180  0.086037 -0.001118
+   Decision Tree        0.097892      -0.168787  0.092625 -0.077781
+   Random Forest        0.085155      -0.016717  0.087384 -0.016795
+             SVM        0.084421      -0.007952  0.086787 -0.009849
+
+## 6. Visualizations
+![Ridge Regression Actual vs Predicted](./Ridge Regression_actual_vs_predicted.png)
+![Lasso Regression Actual vs Predicted](./Lasso Regression_actual_vs_predicted.png)
+![Decision Tree Actual vs Predicted](./Decision Tree_actual_vs_predicted.png)
+![Random Forest Actual vs Predicted](./Random Forest_actual_vs_predicted.png)
+![SVM Actual vs Predicted](./SVM_actual_vs_predicted.png)
